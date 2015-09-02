@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date_of_next_appointment: MyString
+  reason_for_visit: MyString
+  appointment_id: 
+
+two:
+  date_of_next_appointment: MyString
+  reason_for_visit: MyString
+  appointment_id: 

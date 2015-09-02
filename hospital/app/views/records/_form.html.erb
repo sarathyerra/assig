@@ -1,0 +1,45 @@
+<%= form_for(@record) do |f| %>
+  <% if @record.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@record.errors.count, "error") %> prohibited this record from being saved:</h2>
+
+      <ul>
+      <% @record.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name_of_pet %><br>
+    <%= f.text_field :name_of_pet %>
+  </div>
+  <div class="field">
+    <%= f.label :type_of_pet %><br>
+    <%= f.text_field :type_of_pet %>
+  </div>
+  <div class="field">
+    <%= f.label :breed %><br>
+    <%= f.text_field :breed %>
+  </div>
+  <div class="field">
+    <%= f.label :age %><br>
+    <%= f.text_field :age %>
+  </div>
+  <div class="field">
+    <%= f.label :weight %><br>
+    <%= f.text_field :weight %>
+  </div>
+  <div class="field">
+    <%= f.label :date_of_last_visit %><br>
+    <%= f.text_field :date_of_last_visit %>
+  </div>
+  <div class="field">
+    <%= f.label :appointment_id %><br>
+    <%= f.text_field :appointment_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
